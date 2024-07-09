@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* section {
+  width: 100%;
+} */
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 16px;
+  background-color: rgba(210, 242, 214, 0.181);
+  flex-direction: column;
+  gap: 130px;
+  margin-top: 20px;
+}
+
+.container h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+/* .content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  margin-top: 20px;
+} */
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.main-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* .background-image {
+  object-fit: cover;
+} */
+
+.writeup-section {
+  flex: 1;
+  /* min-width: 560px; */
+}
+.writeup-content {
+  flex: 1;
+  /* min-width: 560px; */
+}
+
+.writeup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.writeup-title {
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #141313;
+  margin-bottom: 10px;
+}
+.writeup-text {
+  height: auto;
+  font-size: 14px;
+  color: #100e0e;
+  font-family: Poppins, sans-serif;
+}
+.book-now {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  padding-top: 15px;
+  color: #040404;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.book-now::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #080808;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  color: #2eab4ac7;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+.para-explore {
+  color: #2eab4ac7;
+  display: flex;
+  align-items: center;
+}
+.para-explore svg {
+  margin-left: 0;
+  height: 20px;
+}
+
+/* .writeup-container {
+  position: inherit;
+  right: 20%;
+} */
+
+@media (max-width: 1280px) {
+  .writeup-content,
+  .writeup-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .main-container.reverse .writeup-section {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .content-container {
+    gap: 50px;
+  }
+}
