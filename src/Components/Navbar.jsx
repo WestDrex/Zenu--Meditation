@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="#products">Products</a>
         </li>
         <li>
-          <a href="#blogs">Blogs</a>
+          <a href="#blogs">Zenu Blogs</a>
         </li>
         <li>
           <a href="#signup">Sign Up</a>
